@@ -193,7 +193,7 @@ class DownloadWebpageTask extends AsyncTask<String, Void, String> {
         	//http post
         	try{
         	        HttpClient httpclient = new DefaultHttpClient();
-        	        HttpPost httppost = new HttpPost("http://home.iitj.ac.in/~kuchanamaharsh/solbox/register.php?email="+email.getText().toString()+"&name="+name.getText().toString()+"&pass="+pass.getText().toString());
+        	        HttpPost httppost = new HttpPost("http://"+fullpath+"register.php?email="+email.getText().toString()+"&name="+name.getText().toString()+"&pass="+pass.getText().toString());
         	        HttpResponse response = httpclient.execute(httppost);
         	        HttpEntity entity = response.getEntity();
         	        is= entity.getContent();
