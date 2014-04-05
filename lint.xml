@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="NewApi">
+        <ignore path="src/in/solbox/MainActivity.java" />
+    </issue>
+    <issue id="ValidFragment">
+        <ignore path="src/in/solbox/DoctorsFragment.java" />
+        <ignore path="src/in/solbox/RequestsFragment.java" />
+        <ignore path="src/in/solbox/SettingsFragment.java" />
+    </issue>
+</lint>

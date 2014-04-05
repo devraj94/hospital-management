@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android1:id="@+id/logout_button"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentBottom="true"
+        android1:layout_centerHorizontal="true"
+        android1:layout_marginBottom="29dp"
+        android1:clickable="true"
+        android1:src="@drawable/logout_button" />
+
+    <EditText
+        android1:id="@+id/old_pass_edit_text"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentLeft="true"
+        android1:layout_alignParentRight="true"
+        android1:layout_alignParentTop="true"
+        android1:layout_marginTop="87dp"
+        android1:ems="10"
+        android1:hint="Old Password"
+        android1:inputType="textPassword" />
+
+    <EditText
+        android1:id="@+id/new_pass_edit_text"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentLeft="true"
+        android1:layout_alignParentRight="true"
+        android1:layout_below="@+id/old_pass_edit_text"
+        android1:layout_marginTop="36dp"
+        android1:ems="10"
+        android1:hint="New Password"
+        android1:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageView
+        android1:id="@+id/change_password_button"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_below="@+id/new_pass_edit_text"
+        android1:layout_centerHorizontal="true"
+        android1:layout_marginTop="54dp"
+        android1:clickable="true"
+        android1:src="@drawable/changepassword_button" />
+
+</RelativeLayout>

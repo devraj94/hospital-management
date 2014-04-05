@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical" >
+ 
+<ViewFlipper
+android:id="@+id/view_flipper"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent" >
+ 
+<RelativeLayout
+android:layout_width="fill_parent"
+android:layout_height="fill_parent" >
+ 
+<ImageView
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:layout_gravity="center"
+android:adjustViewBounds="true"
+android:scaleType="centerCrop"
+android:src="@drawable/firstimage" />
+
+</RelativeLayout>
+ 
+<RelativeLayout
+android:layout_width="fill_parent"
+android:layout_height="fill_parent" >
+ 
+<ImageView
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:layout_gravity="center"
+android:adjustViewBounds="true"
+android:scaleType="centerCrop"
+android:src="@drawable/secondimage" />
+ 
+</RelativeLayout>
+ 
+<RelativeLayout
+android:layout_width="fill_parent"
+android:layout_height="fill_parent" >
+ 
+<ImageView
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:layout_gravity="center"
+android:adjustViewBounds="true"
+android:scaleType="centerCrop"
+android:src="@drawable/thirdimage" />
+ 
+</RelativeLayout>
+
+<RelativeLayout
+android:layout_width="fill_parent"
+android:layout_height="fill_parent" >
+ 
+<ImageView
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:layout_gravity="center"
+android:adjustViewBounds="true"
+android:scaleType="centerCrop"
+android:src="@drawable/fourthimage" />
+ 
+</RelativeLayout>
+<RelativeLayout
+android:layout_width="fill_parent"
+android:layout_height="fill_parent" >
+ 
+<ImageView
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:layout_gravity="center"
+android:adjustViewBounds="true"
+android:scaleType="centerCrop"
+android:src="@drawable/fifthimage" />
+ 
+</RelativeLayout>
+</ViewFlipper>
+
+<ImageView
+    android:id="@+id/join_button_splash"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_marginBottom="18dp"
+    android:layout_marginLeft="14dp"
+    android:adjustViewBounds="true"
+    android:clickable="true"
+    android:src="@drawable/signup_button" />
+
+<ImageView
+    android:id="@+id/signin_button_splash"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignTop="@+id/join_button_splash"
+    android:layout_marginRight="14dp"
+    android:adjustViewBounds="true"
+    android:clickable="true"
+    android:src="@drawable/login_button" />
+
+</RelativeLayout>

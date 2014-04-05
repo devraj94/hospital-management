@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal" 
+    android:background="@drawable/back_profile_name"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="552dp" >
+
+    <ImageView
+        android:id="@+id/others_profile_profile_pic"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/default_profile_pic" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/others_profile_profile_pic"
+        android:text="Name :"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/others_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/textView1"
+        android:hint="Name"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/others_oneline_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="26dp"
+        android:hint="One Line" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/others_profile_profile_pic"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="58dp"
+        android:text="Available :" />
+
+    <ImageView
+        android:id="@+id/others_connect_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/others_profile_profile_pic"
+        android:layout_alignLeft="@+id/others_oneline_description"
+        android:layout_marginLeft="30dp"
+        android:clickable="true"
+        android:src="@drawable/bookappoint_button" />
+
+    <RadioButton
+        android:id="@+id/radio_slot1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:text="Slot1" />
+
+    <RadioButton
+        android:id="@+id/radioslot2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radio_slot1"
+        android:layout_below="@+id/radio_slot1"
+        android:layout_marginTop="21dp"
+        android:text="Slot2" />
+
+    <RadioButton
+        android:id="@+id/radioslot3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioslot2"
+        android:layout_below="@+id/radioslot2"
+        android:layout_marginTop="25dp"
+        android:text="Slot3" />
+
+    <TextView
+        android:id="@+id/slot1_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/radio_slot1"
+        android:layout_alignBottom="@+id/radio_slot1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:text="slot1 available" />
+
+    <TextView
+        android:id="@+id/slot2_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/radioslot2"
+        android:layout_alignBottom="@+id/radioslot2"
+        android:layout_alignLeft="@+id/slot1_text"
+        android:text="slot2 available" />
+
+    <TextView
+        android:id="@+id/slot3_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/radioslot3"
+        android:layout_alignBottom="@+id/radioslot3"
+        android:layout_alignLeft="@+id/slot2_text"
+        android:text="slot3 available" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/radioslot3"
+        android:layout_marginTop="32dp"
+        android:text="Selected Date :" />
+
+    <TextView
+        android:id="@+id/date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/others_oneline_description"
+        android:layout_alignRight="@+id/slot3_text" />
+    
+    <DatePicker
+        android:id="@+id/dpResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date_text" />
+
+</RelativeLayout>
+</ScrollView>
