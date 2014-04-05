@@ -13,3 +13,5 @@ Self personnal profile .
 Track record of previous Doctor appointments.
 
 Option to book an appointment with the available doctors.
+
+dont forget to change the php file path in every async task.
