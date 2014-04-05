@@ -278,7 +278,7 @@ class Asynctask_setslot extends AsyncTask<String, Void, String> {
         	//http post
         	try{
         	        HttpClient httpclient = new DefaultHttpClient();
-        	        HttpPost httppost = new HttpPost("http://home.iitj.ac.in/~kuchanamaharsh/solbox/setslot.php?email="+j.email+"&date="+j.tvDisplayDate.getText().toString()+"&self="+j.selfemail+"&str="+j.sent);
+        	        HttpPost httppost = new HttpPost("http://"+fullpath+"/setslot.php?email="+j.email+"&date="+j.tvDisplayDate.getText().toString()+"&self="+j.selfemail+"&str="+j.sent);
         	        HttpResponse response = httpclient.execute(httppost);
         	        HttpEntity entity = response.getEntity();
         	        is= entity.getContent();
