@@ -41,7 +41,7 @@ public class DoctorsFragment extends Fragment {
 				      progress.show();
 			        LoadDoctorsData loadFeedData = new LoadDoctorsData(adapter,a.getApplicationContext(),DoctorsFragment.this);
 			   
-			            loadFeedData.execute("http://home.iitj.ac.in/~kuchanamaharsh/solbox/doctors.php");
+			            loadFeedData.execute("http://"+fullpath+"/doctors.php");
 			        
         return rootView; 
     }
